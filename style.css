@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin-inline: auto;
+}
+
+.welcome {
+    min-height: 934px;
+    background: #F8F8F8;
+
+}
+
+
+.container {
+    max-width: 1137px;
+    margin-inline: auto;
+    padding: 0 20px;
+}
+
+.weclome__container {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.welcome-info {
+    flex-shrink: 0;
+
+}
+
+.welcome-image {
+    max-width: 414px;
+    height: auto;
+
+}
+
+.welcome-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.welcome-info__model {
+    color: #161515;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 186%;
+    margin-bottom: 53px;
+    display: inline-block;
+}
+
+.welcome-info__title {
+    color: #272727;
+    font-size: 250px;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+.welcome-info__desc {
+    color: #161515;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 155%;
+    max-width: 575px;
+    margin-bottom: 61px;
+}
+
+.welcome-bar {
+    display: inline-flex;
+}
+
+.welcome-bar__link {
+    display: inline-block;
+
+
+    background: #161515;
+    padding: 26px;
+    min-width: 278px;
+
+    color: #FFF;
+    font-family: League Spartan;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.welcome-bar__price {
+    background: #FFF;
+    box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 0.25);
+    padding: 26px;
+    font-family: League Spartan;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #272727;
+}
+
+.info {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.info__subtitle {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 186%;
+    /* 44.64px */
+}
+
+.info__title {
+    color: #000;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 112.5%;
+    margin-bottom: 84px;
+}
+
+
+.watch {
+    max-width: 532px;
+    margin-inline: auto;
+    margin-bottom: 85px;
+
+}
+
+.watch__img {
+    background: #F8F8F8;
+    padding: 65px 105px;
+    margin-bottom: 67px;
+    max-width: 417px;
+    margin-inline: auto;
+}
+
+.son22-img {
+    padding: 110px 65px;
+}
+
+.sw12-img {
+    max-width: 498px;
+}
+
+.watch__title {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 17px;
+
+}
+
+.watch__desc {
+    color: #161515;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 155%;
+    /* 49.6px */
+}
+
+.product {
+    margin-bottom: 142px;
+}
+
+.procuct__title {
+    /*color: #161515;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 186%;
+    text-transform: capitalize;
+    margin-bottom: 58px;
+    display: inline-block;
+    position: relative;*/
+    max-width: 258px;
+    position: relative;
+    margin-inline: auto;
+    margin-bottom: 58px;
+
+    color: var(--, #161515);
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 186%;
+}
+
+.procuct__title::before {
+    /*width: calc(100%-72px);
+    height: 1px;
+    content: '';
+    display: block;
+    background: #707070;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);*/
+    content: '';
+    width: calc(100% - 35px);
+    height: 2px;
+
+    background: #707070;
+    left: 50%;
+    transform: translateX(-50%);
+
+    position: absolute;
+    bottom: 0;
+
+}
+
+.product__desc {
+    color: #161515;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 170%;
+    /* 40.8px */
+    max-width: 520px;
+    margin-inline: auto;
+
+}
+
+.product__desc a {
+    color: #BB8B5D;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 170%;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 992px) {
+    .welcome {
+        padding: 50px 0;
+        min-height: auto;
+    }
+
+    .weclome__container {
+        flex-direction: column-reverse;
+    }
+
+    .welcome-info__title {
+        font-size: 110px;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .welcome-bar{
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .welcome-image {
+        height: 300px;
+
+    }
+    .welcome-image img{
+        height: 100%;
+        object-fit: contain;
+
+    }
+}
+
+@media screen and (max-width: 392px){
+    .welcome-info__desc, .watch__desc{
+        font-size: 24px;
+    }
+    .watch__img{
+        padding: 65px;
+    }
+}
